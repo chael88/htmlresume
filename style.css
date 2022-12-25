@@ -1,0 +1,402 @@
+/*COLORS: #92BB19 -green*/
+
+
+/*--------------------------------------------*/
+/**BASIC SETUP**/
+/*--------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-weight: 300;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    background: #232323 url(img/black_denim.png);
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section-border {
+    border-top: solid 2px #92BB19;
+    width: 50px;
+}
+
+.container h3 {
+    font-size: 17px;
+}
+
+
+/*--------------------------------------------*/
+/**NAVBAR**/
+/*--------------------------------------------*/
+
+header {
+
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    transition: top 0.2s ease-in-out;
+}
+
+
+
+.nav-up {
+    /*class added in js when scroll*/
+    top: -5vh !important;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 150%
+}
+
+#navbarNav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar {
+    height: 6vh;
+    background-color: #202225e7 !important;
+    padding: 0.5rem;
+    border-top: 5px solid #92BB19;
+
+}
+
+.nav-link {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.nav-link:hover {
+    opacity: 0.5;
+    color: #92BB19 !important;
+
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(5, 7, 0, 0.43);
+    }
+
+    .nav-link:hover {
+        opacity: 0.5;
+        color: #b6e626 !important;
+    }
+
+    .nav-link {
+        color: rgba(255, 255, 255, 0.78) !important
+    }
+
+}
+
+/*--------------------------------------------*/
+/**JUMBOTRON**/
+/*--------------------------------------------*/
+
+.jumbotron {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/coding.jpg);
+    /*    background: url(img/coding.jpg);*/
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+.display-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 500%;
+    font-weight: 500;
+
+
+}
+
+.subtitle {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*--------------------------------------------*/
+/**MY INFO**/
+/*--------------------------------------------*/
+
+#my-info {
+    height: 80px;
+    background-color: #92BB19;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*--------------------------------------------*/
+/**SKILLS**/
+/*--------------------------------------------*/
+
+#skills {
+    padding-top: 60px;
+    display: block;
+    position: relative;
+
+    visibility: hidden;
+}
+
+.skill-section {
+    padding-bottom: 50px;
+}
+
+.skills-img {
+    width: 3.5rem;
+    height: auto;
+}
+
+
+
+
+
+/*--------------------------------------------*/
+/**WORK EXPERIENCE**/
+/*--------------------------------------------*/
+
+#work-exp {
+    padding: 60px;
+    background-color: white;
+    color: black;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-info strong {
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------*/
+/**GITHUB**/
+/*--------------------------------------------*/
+
+#github {
+    height: 100px;
+    background-color: #92BB19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------*/
+/**ABOUT ME**/
+/*--------------------------------------------*/
+
+#about-me {
+    visibility: hidden;
+    display: block;
+    top: -55px;
+    position: relative;
+}
+
+.aboutme-section {
+    margin: 50px;
+    height: 35vh;
+}
+
+
+.aboutme-section .carousel-item h4 {
+    padding-top: 35px;
+    padding-left: 80px;
+}
+
+
+.aboutme-section .carousel-item {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.aboutme-img {
+    height: 17vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.aboutme-img img {
+    border-radius: 50%;
+    padding-bottom: 8px;
+    width: auto;
+    height: 100%;
+
+}
+
+
+
+/*--------------------------------------------*/
+/**CONTACT**/
+/*--------------------------------------------*/
+
+#contact-section {
+    visibility: hidden;
+    display: block;
+    top: -10px;
+    position: relative;
+}
+
+#contact {
+    height: 100vh;
+    margin: 50px;
+    background-color: #92BB19;
+}
+
+#contact .section-title {
+    padding-top: 20px;
+}
+
+#contact .section-border {
+    border-color: black;
+}
+
+form {
+    width: 60%;
+}
+
+#contact .button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-complete {
+    padding: 10px;
+    width: 50px;
+    color: #fff;
+    pointer-events: none;
+}
+
+
+/*--------------------------------------------*/
+/**FOOTER**/
+/*--------------------------------------------*/
+footer.socials {
+    display: block;
+}
+
+i.social {
+    transition: 0.2s ease-in-out;
+}
+
+i.social:hover {
+    transform: scale(1.5);
+    color: white;
+}
+
+
+footer ul {
+    margin: 1em 0 0;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+ul li a {
+    color: #666;
+    padding-left: 0.5rem;
+
+}
+
+
+
+.icons-footer {
+    position: relative;
+    width: 40px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    line-height: 35px;
+}
+
+
+p.copy {
+    color: rgb(179, 175, 175);
+    margin-top: 1.5rem;
+    font-size: 0.8em;
+}
+
+
+
+.signature {
+    display: flex;
+    justify-content: center;
+    color: #92BB19;
+    font-size: 15px;
+}
+
+.signature__name {
+    transition: .5s;
+    color: #92BB19;
+    text-decoration: none;
+}
+
+.signature__name:hover {
+    color: #1E6583;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    animation: pulse-animation .5s alternate infinite;
+    fill: #BA2632;
+}
+
+@keyframes pulse-animation {
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+.blue-hover {
+    color: blue;
+}

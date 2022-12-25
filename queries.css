@@ -1,0 +1,127 @@
+/*
+*
+*			Media Queries for Responsive Web Design - basic 
+*/
+
+/* Big tablet - 1024px - 1200px
+*****************************************/
+
+@media only screen and (max-width: 1200px) {
+
+
+    /* Tablets - 768px - 1023px
+*****************************************/
+
+    @media only screen and (max-width: 1023px) {
+        body {
+            font-size: 18px;
+        }
+
+
+        .navbar {
+            height: 8vh;
+
+        }
+
+
+        input[type="submit"] {
+            width: 70%;
+        }
+
+        .aboutme-img {
+            height: 10vh;
+            width: auto;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            bottom: 300px;
+        }
+
+        .aboutme-img img {
+            border-radius: 50%;
+            padding-top: 270px;
+            margin-top: auto;
+        }
+
+
+        /* Small phones/ tablets - 481px - 767px
+*****************************************/
+
+        @media only screen and (max-width: 767px) {
+            body {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 30px 0;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            input[type="submit"] {
+                width: 90%;
+            }
+
+            form {
+                width: 100%;
+            }
+
+            .aboutme-img {
+                height: 40vh;
+                width: auto;
+                display: flex;
+                position: relative;
+                justify-content: center;
+                top: 20px;
+            }
+
+            .aboutme-img img {
+                border-radius: 50%;
+                padding-top: 270px;
+                margin-top: auto;
+            }
+
+            .aboutme-section .carousel-item h4 {
+                padding-top: 35px;
+                padding-left: 0px;
+            }
+
+            .aboutme-section .carousel-item {
+                padding-left: 12%;
+                padding-right: 12%;
+
+            }
+
+            #contact-section {
+                margin-top: 100px;
+                display: block;
+                top: -10px;
+                position: relative;
+            }
+
+            .jumbotron .display-4 {
+                font-size: 3rem;
+            }
+
+            .jumbotron .subtitle {
+                font-size: 1.2rem;
+            }
+
+            /* Small phones - Less than or equal to 480px
+*********************************************/
+
+            @media only screen and (max-width: 480px) {
+                section {
+                    padding: 25px 0;
+                }
+
+                form {
+                    width: 100%;
+                }
+            }
